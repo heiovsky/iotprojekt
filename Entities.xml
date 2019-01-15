@@ -1,31 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Entities build="b535" majorVersion="8" minorVersion="3" modelPersistenceProviderPackage="H2PersistenceProviderPackage" revision="2" schemaVersion="1030" universal="">
-    <StyleDefinitions/>
-    <Networks/>
-    <PersistenceProviderPackages/>
-    <Mashups>
-        <Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-06T00:14:16.595+01:00"
-                name="PCs_SENSORS" projectName="TT_IOT_PROJ" rows="0.0" tags="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ParameterDefinitions/>
-            <Things/>
-            <ThingShapes/>
-            <ThingTemplates/>
-            <mashupContent><![CDATA[{
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b535" majorVersion="8" minorVersion="3" modelPersistenceProviderPackage="H2PersistenceProviderPackage" revision="2" schemaVersion="1030" universal=""><StyleDefinitions/><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isResponsive="false" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-14T23:54:19.390+01:00" name="PcListFormat" projectName="TT_IOT_PROJ" rows="0.0" tags=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions><FieldDefinition aspect.ordinal="0" baseType="STRING" description="" name="firstLine" ordinal="0"/><FieldDefinition aspect.ordinal="1" baseType="STRING" description="" name="secondLine" ordinal="0"/></ParameterDefinitions><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
   "CustomMashupCss" : "",
   "Data" : {
     "Session" : {
@@ -59,10 +32,307 @@
       } ]
     }
   },
-  "DataBindings" : [ ],
-  "DesignTimePermissions" : { },
+  "DataBindings" : [ {
+    "Id" : "e859c709-5948-49fe-bc62-13b1e22b5154",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "firstLine",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetProperty" : "Text",
+      "TargetPropertyBaseType" : "STRING"
+    } ],
+    "SourceArea" : "Mashup",
+    "SourceId" : "mashup-root",
+    "SourceSection" : "",
+    "TargetArea" : "UI",
+    "TargetId" : "label-2",
+    "TargetSection" : ""
+  }, {
+    "Id" : "94c37048-6707-4786-8ca0-80a1a086e9ec",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "secondLine",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetProperty" : "Text",
+      "TargetPropertyBaseType" : "STRING"
+    } ],
+    "SourceArea" : "Mashup",
+    "SourceId" : "mashup-root",
+    "SourceSection" : "",
+    "TargetArea" : "UI",
+    "TargetId" : "label-3",
+    "TargetSection" : ""
+  } ],
+  "DesignTimePermissions" : {
+    "Create" : [ ],
+    "Delete" : [ ],
+    "Metadata" : [ ],
+    "Read" : [ ],
+    "Update" : [ ]
+  },
   "Events" : [ ],
-  "RunTimePermissions" : { },
+  "RunTimePermissions" : {
+    "permissions" : [ ]
+  },
+  "UI" : {
+    "Properties" : {
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "Area" : "Mashup",
+      "BGImageRepeat" : "no-repeat",
+      "BGImageSize" : "auto",
+      "Columns" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "DisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Height" : 73,
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false,
+      "IsPrintLayout" : false,
+      "Left" : 0,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "MinHeight" : 0,
+      "MinWidth" : 0,
+      "ResponsiveLayout" : false,
+      "Rows" : 0,
+      "ShowDataLoading" : true,
+      "Style" : "DefaultMashupStyle",
+      "Title" : "",
+      "TitleBar" : false,
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "TitleBarText" : "Gadget Title Here",
+      "Top" : 0,
+      "Type" : "mashup",
+      "Visible" : true,
+      "Width" : 1024,
+      "Z-index" : 10,
+      "__TypeDisplayName" : "Mashup",
+      "_currentParameterDefs" : [ {
+        "BaseType" : "STRING",
+        "Description" : "",
+        "ParameterName" : "firstLine"
+      }, {
+        "BaseType" : "STRING",
+        "Description" : "",
+        "ParameterName" : "secondLine"
+      } ],
+      "id_index" : 3,
+      "supportsAutoResize" : true
+    },
+    "Widgets" : [ {
+      "Properties" : {
+        "Alignment" : "left",
+        "AllowEllipsis" : false,
+        "Area" : "UI",
+        "DisplayName" : "label-2",
+        "Height" : 22,
+        "Id" : "label-2",
+        "Left" : 25,
+        "ResponsiveLayout" : false,
+        "ShowDataLoading" : true,
+        "Style" : "DefaultLabelStyle",
+        "ToolTipField" : "",
+        "ToolTipStyle" : "DefaultTooltipStyle",
+        "Top" : 10,
+        "Type" : "label",
+        "Visible" : true,
+        "Width" : 75,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Label",
+        "__supportsTooltip" : true
+      },
+      "Widgets" : [ ]
+    }, {
+      "Properties" : {
+        "Alignment" : "left",
+        "AllowEllipsis" : false,
+        "Area" : "UI",
+        "DisplayName" : "label-3",
+        "Height" : 22,
+        "Id" : "label-3",
+        "Left" : 30,
+        "ResponsiveLayout" : false,
+        "ShowDataLoading" : true,
+        "Style" : "DefaultLabelStyle",
+        "ToolTipField" : "",
+        "ToolTipStyle" : "DefaultTooltipStyle",
+        "Top" : 45,
+        "Type" : "label",
+        "Visible" : true,
+        "Width" : 75,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Label",
+        "__supportsTooltip" : true
+      },
+      "Widgets" : [ ]
+    } ]
+  },
+  "mashupType" : "mashup"
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T23:44:56.640+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:45:32.133+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:47:58.335+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:53:28.203+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:54:19.390+01:00" user="Administrator"/></ConfigurationChanges></Mashup><Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-15T02:38:28.932+01:00" name="PCsMashup" projectName="TT_IOT_PROJ" rows="0.0" tags=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ParameterDefinitions><FieldDefinition aspect.ordinal="0" baseType="THINGNAME" description="" name="selectedPc" ordinal="0"/></ParameterDefinitions><Things/><ThingShapes/><ThingTemplates><ThingTemplate>PcThingTemplate</ThingTemplate></ThingTemplates><mashupContent><![CDATA[{
+  "CustomMashupCss" : "",
+  "Data" : {
+    "DynamicThingTemplates_PcThingTemplate" : {
+      "DataName" : "DynamicThingTemplates_PcThingTemplate",
+      "EntityName" : "PcThingTemplate",
+      "EntityType" : "DynamicThingTemplates",
+      "Id" : "484044a1-ae2b-4cf1-8556-7759a60334ff",
+      "Services" : [ {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "10870f2e-4624-42a4-b6fe-b1bedcf82ed9",
+        "Name" : "QueryPropertyHistory",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "QueryPropertyHistory"
+      } ]
+    },
+    "Session" : {
+      "DataName" : "Session",
+      "EntityName" : "",
+      "EntityType" : "Session",
+      "Id" : "session",
+      "Services" : [ {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "GetGlobalSessionValues"
+      } ]
+    },
+    "ThingTemplates_PcThingTemplate" : {
+      "DataName" : "ThingTemplates_PcThingTemplate",
+      "EntityName" : "PcThingTemplate",
+      "EntityType" : "ThingTemplates",
+      "Id" : "4b207d44-25be-43d3-90b2-58c1a497b47c",
+      "Services" : [ {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "09a63262-a6a2-48f3-96b7-602dc68924af",
+        "Name" : "GetImplementingThings",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "GetImplementingThings"
+      } ]
+    },
+    "UserExtensions" : {
+      "DataName" : "UserExtensions",
+      "EntityName" : "",
+      "EntityType" : "UserExtensions",
+      "Id" : "UserExtensions",
+      "Services" : [ {
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "RefreshInterval" : 0,
+        "Target" : "GetCurrentUserExtensionProperties"
+      } ]
+    }
+  },
+  "DataBindings" : [ {
+    "Id" : "fc8729bf-4e4b-4ccb-91f8-90feeee6cf5e",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "",
+      "SourcePropertyBaseType" : "INFOTABLE",
+      "SourcePropertyType" : "InfoTable",
+      "TargetProperty" : "Data",
+      "TargetPropertyBaseType" : "INFOTABLE",
+      "TargetPropertyType" : "property"
+    } ],
+    "SourceArea" : "Data",
+    "SourceDetails" : "AllData",
+    "SourceId" : "GetImplementingThings",
+    "SourceSection" : "ThingTemplates_PcThingTemplate",
+    "TargetArea" : "UI",
+    "TargetId" : "repeater-9",
+    "TargetSection" : ""
+  }, {
+    "Id" : "5a50c760-60d9-45fa-a9f5-f90500c10c07",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "name",
+      "SourcePropertyBaseType" : "STRING",
+      "SourcePropertyType" : "Data",
+      "TargetProperty" : "selectedPc",
+      "TargetPropertyBaseType" : "THINGNAME"
+    } ],
+    "SourceArea" : "Data",
+    "SourceDetails" : "SelectedRows",
+    "SourceId" : "GetImplementingThings",
+    "SourceSection" : "ThingTemplates_PcThingTemplate",
+    "TargetArea" : "Mashup",
+    "TargetId" : "mashup-root",
+    "TargetSection" : ""
+  }, {
+    "Id" : "922ac474-6c79-40a2-a6dc-7f8f0c4b4ff9",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "selectedPc",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetProperty" : "value",
+      "TargetPropertyBaseType" : "THINGNAME",
+      "TargetPropertyType" : "Entity"
+    } ],
+    "SourceArea" : "Mashup",
+    "SourceId" : "mashup-root",
+    "SourceSection" : "",
+    "TargetArea" : "Data",
+    "TargetId" : "EntityName",
+    "TargetSection" : "DynamicThingTemplates_PcThingTemplate"
+  }, {
+    "Id" : "17060bbf-1427-4f5b-ac1d-4aa8db802ac0",
+    "PropertyMaps" : [ {
+      "SourceProperty" : "",
+      "SourcePropertyBaseType" : "INFOTABLE",
+      "SourcePropertyType" : "InfoTable",
+      "TargetProperty" : "Data",
+      "TargetPropertyBaseType" : "INFOTABLE",
+      "TargetPropertyType" : "property"
+    } ],
+    "SourceArea" : "Data",
+    "SourceDetails" : "AllData",
+    "SourceId" : "QueryPropertyHistory",
+    "SourceSection" : "DynamicThingTemplates_PcThingTemplate",
+    "TargetArea" : "UI",
+    "TargetId" : "timeserieschart-20",
+    "TargetSection" : ""
+  } ],
+  "DesignTimePermissions" : {
+    "Create" : [ ],
+    "Delete" : [ ],
+    "Metadata" : [ ],
+    "Read" : [ ],
+    "Update" : [ ]
+  },
+  "Events" : [ {
+    "EventHandlerArea" : "Data",
+    "EventHandlerId" : "ThingTemplates_PcThingTemplate",
+    "EventHandlerService" : "GetImplementingThings",
+    "EventTriggerArea" : "Mashup",
+    "EventTriggerEvent" : "Loaded",
+    "EventTriggerId" : "mashup-root",
+    "EventTriggerSection" : "",
+    "Id" : "9a430507-24fa-43c9-8ef4-60e0e12943f1"
+  }, {
+    "EventHandlerArea" : "Data",
+    "EventHandlerId" : "DynamicThingTemplates_PcThingTemplate",
+    "EventHandlerService" : "QueryPropertyHistory",
+    "EventTriggerArea" : "Mashup",
+    "EventTriggerEvent" : "Loaded",
+    "EventTriggerId" : "mashup-root",
+    "EventTriggerSection" : "",
+    "Id" : "969332f4-75e5-4ef3-82f7-8a378b6ff0bd"
+  }, {
+    "EventHandlerArea" : "Data",
+    "EventHandlerId" : "DynamicThingTemplates_PcThingTemplate",
+    "EventHandlerService" : "QueryPropertyHistory",
+    "EventTriggerArea" : "Mashup",
+    "EventTriggerEvent" : "selectedPcChanged",
+    "EventTriggerId" : "mashup-root",
+    "EventTriggerSection" : "",
+    "Id" : "7d5fc407-7ed4-435d-b457-f9ea88f28c18"
+  } ],
+  "RunTimePermissions" : {
+    "permissions" : [ ]
+  },
   "UI" : {
     "Properties" : {
       "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
@@ -95,471 +365,566 @@
       "Width" : 1024,
       "Z-index" : 10,
       "__TypeDisplayName" : "Mashup",
-      "id_index" : 1,
+      "_currentParameterDefs" : [ {
+        "BaseType" : "THINGNAME",
+        "Description" : "",
+        "ParameterName" : "selectedPc"
+      } ],
+      "id_index" : 20,
       "supportsAutoResize" : true
     },
-    "Widgets" : [ ]
+    "Widgets" : [ {
+      "Properties" : {
+        "Area" : "UI",
+        "Columns" : 1,
+        "DisplayName" : "layout-2",
+        "Footer" : false,
+        "FooterHeight" : 0,
+        "Header" : false,
+        "HeaderHeight" : 0,
+        "Id" : "layout-2",
+        "IncludeSpacingInFixedAreas" : false,
+        "IsPrintLayout" : false,
+        "Left" : 100,
+        "LeftSidebar" : true,
+        "LeftSidebarWidth" : 200,
+        "Orientation" : "horizontal",
+        "PctColumn1" : 100,
+        "PctColumn2" : 0,
+        "PctColumn3" : 1,
+        "PctColumn4" : 1,
+        "PctColumn5" : 1,
+        "PctColumn6" : 1,
+        "PctColumn7" : 1,
+        "PctColumn8" : 1,
+        "PctRow1" : 50,
+        "PctRow2" : 50,
+        "PctRow3" : 0,
+        "PctRow4" : 0,
+        "PctRow5" : 0,
+        "PctRow6" : 0,
+        "PctRow7" : 0,
+        "PctRow8" : 0,
+        "PrintMarginLeftRight" : 0.5,
+        "PrintMarginTopBottom" : 0.5,
+        "PrintWidth" : 650,
+        "ResponsiveLayout" : true,
+        "RightSidebar" : true,
+        "RightSidebarWidth" : 5,
+        "Rows" : 0,
+        "ShowDataLoading" : true,
+        "Spacing" : 2,
+        "Top" : 70,
+        "Type" : "layout",
+        "Visible" : true,
+        "Z-index" : 10,
+        "__TypeDisplayName" : "Layout"
+      },
+      "Widgets" : [ {
+        "Properties" : {
+          "AnimateExpandCollapse" : true,
+          "Area" : "UI",
+          "BGImageRepeat" : "no-repeat",
+          "BGImageSize" : "auto",
+          "DisplayName" : "Left Sidebar",
+          "ExpandCollapseTabLocation" : "outside",
+          "Expanded" : true,
+          "Id" : "container-3",
+          "MinHeight" : 0,
+          "MinWidth" : 0,
+          "Overlay" : false,
+          "OverlayIsTransparent" : false,
+          "ResponsiveLayout" : true,
+          "ShowDataLoading" : true,
+          "ShowExpandCollapseTab" : false,
+          "Style" : "DefaultAutoRefreshToggleStyle",
+          "TabCollapseStyle" : "DefaultTabCollapseStyle",
+          "TabExpandStyle" : "DefaultTabExpandStyle",
+          "TabHeight" : 36,
+          "TabLocation" : "center",
+          "TabOffset" : 0,
+          "TabWidth" : 36,
+          "Type" : "container",
+          "Visible" : true,
+          "Z-index" : 10,
+          "__TypeDisplayName" : "Container"
+        },
+        "Widgets" : [ {
+          "Properties" : {
+            "Area" : "UI",
+            "Columns" : 0,
+            "DisplayName" : "layout-6",
+            "Footer" : true,
+            "FooterHeight" : 100,
+            "Header" : false,
+            "HeaderHeight" : 0,
+            "Id" : "layout-6",
+            "IncludeSpacingInFixedAreas" : false,
+            "IsPrintLayout" : false,
+            "Left" : 35,
+            "LeftSidebar" : false,
+            "LeftSidebarWidth" : 0,
+            "Orientation" : "vertical",
+            "PctColumn1" : 50,
+            "PctColumn2" : 50,
+            "PctColumn3" : 1,
+            "PctColumn4" : 1,
+            "PctColumn5" : 1,
+            "PctColumn6" : 1,
+            "PctColumn7" : 1,
+            "PctColumn8" : 1,
+            "PctRow1" : 100,
+            "PctRow2" : 0,
+            "PctRow3" : 0,
+            "PctRow4" : 0,
+            "PctRow5" : 0,
+            "PctRow6" : 0,
+            "PctRow7" : 0,
+            "PctRow8" : 0,
+            "PrintMarginLeftRight" : 0.5,
+            "PrintMarginTopBottom" : 0.5,
+            "PrintWidth" : 650,
+            "ResponsiveLayout" : true,
+            "RightSidebar" : false,
+            "RightSidebarWidth" : 0,
+            "Rows" : 1,
+            "ShowDataLoading" : true,
+            "Spacing" : 2,
+            "Top" : 70,
+            "Type" : "layout",
+            "Visible" : true,
+            "Z-index" : 10,
+            "__TypeDisplayName" : "Layout"
+          },
+          "Widgets" : [ {
+            "Properties" : {
+              "AnimateExpandCollapse" : true,
+              "Area" : "UI",
+              "BGImageRepeat" : "no-repeat",
+              "BGImageSize" : "auto",
+              "DisplayName" : "Row 1",
+              "ExpandCollapseTabLocation" : "outside",
+              "Expanded" : true,
+              "Id" : "container-7",
+              "MinHeight" : 0,
+              "MinWidth" : 0,
+              "Overlay" : false,
+              "OverlayIsTransparent" : false,
+              "ResponsiveLayout" : true,
+              "ShowDataLoading" : true,
+              "ShowExpandCollapseTab" : false,
+              "Style" : "DefaultContainerStyle",
+              "TabCollapseStyle" : "DefaultTabCollapseStyle",
+              "TabExpandStyle" : "DefaultTabExpandStyle",
+              "TabHeight" : 36,
+              "TabLocation" : "center",
+              "TabOffset" : 0,
+              "TabWidth" : 36,
+              "Type" : "container",
+              "Visible" : true,
+              "Z-index" : 10,
+              "__TypeDisplayName" : "Container"
+            },
+            "Widgets" : [ {
+              "Properties" : {
+                "AllowSelection" : true,
+                "Area" : "UI",
+                "AutoSelectFirstRow" : true,
+                "DisplayName" : "repeater-9",
+                "FixedMashupHeight" : 60,
+                "FixedMashupWidth" : 1024,
+                "Height" : 300,
+                "HideInnerScrollbars" : false,
+                "Id" : "repeater-9",
+                "ItemLoadBehavior" : "load-destroy-on-demand",
+                "Left" : 0,
+                "Mashup" : "PcListFormat",
+                "MashupHeight" : 618,
+                "MashupParameters" : [ {
+                  "BaseType" : "STRING",
+                  "Description" : "",
+                  "ParameterName" : "secondLine"
+                }, {
+                  "BaseType" : "STRING",
+                  "Description" : "",
+                  "ParameterName" : "firstLine"
+                } ],
+                "MashupWidth" : 1024,
+                "RepeaterCellStyle" : "DefaultRepeaterCellStyle",
+                "RepeaterSelectedStyle" : "DefaultRepeaterSelectedStyle",
+                "RepeaterStyle" : "DefaultRepeaterStyle",
+                "RepeaterUnselectedStyle" : "DefaultRepeaterUnselectedStyle",
+                "ResponsiveLayout" : true,
+                "ReuseMashups" : true,
+                "SelectionHeight" : 25,
+                "SelectionWidth" : 25,
+                "ShowDataLoading" : true,
+                "Top" : 0,
+                "Type" : "repeater",
+                "View" : "vertical",
+                "Visible" : true,
+                "Width" : 400,
+                "Z-index" : 10,
+                "__TypeDisplayName" : "Repeater",
+                "firstLine" : "name",
+                "secondLine" : ""
+              },
+              "Widgets" : [ ]
+            } ]
+          }, {
+            "Properties" : {
+              "AnimateExpandCollapse" : true,
+              "Area" : "UI",
+              "BGImageRepeat" : "no-repeat",
+              "BGImageSize" : "auto",
+              "DisplayName" : "Footer",
+              "ExpandCollapseTabLocation" : "outside",
+              "Expanded" : true,
+              "Id" : "container-8",
+              "MinHeight" : 0,
+              "MinWidth" : 0,
+              "Overlay" : false,
+              "OverlayIsTransparent" : false,
+              "ResponsiveLayout" : true,
+              "ShowDataLoading" : true,
+              "ShowExpandCollapseTab" : false,
+              "Style" : "DefaultContainerStyle",
+              "TabCollapseStyle" : "DefaultTabCollapseStyle",
+              "TabExpandStyle" : "DefaultTabExpandStyle",
+              "TabHeight" : 36,
+              "TabLocation" : "center",
+              "TabOffset" : 0,
+              "TabWidth" : 36,
+              "Type" : "container",
+              "Visible" : true,
+              "Z-index" : 10,
+              "__TypeDisplayName" : "Container"
+            },
+            "Widgets" : [ ]
+          } ]
+        } ]
+      }, {
+        "Properties" : {
+          "AnimateExpandCollapse" : true,
+          "Area" : "UI",
+          "BGImageRepeat" : "no-repeat",
+          "BGImageSize" : "auto",
+          "DisplayName" : "Column 1",
+          "ExpandCollapseTabLocation" : "outside",
+          "Expanded" : true,
+          "Id" : "container-4",
+          "MinHeight" : 0,
+          "MinWidth" : 0,
+          "Overlay" : false,
+          "OverlayIsTransparent" : false,
+          "ResponsiveLayout" : true,
+          "ShowDataLoading" : true,
+          "ShowExpandCollapseTab" : false,
+          "Style" : "DefaultContainerStyle",
+          "TabCollapseStyle" : "DefaultTabCollapseStyle",
+          "TabExpandStyle" : "DefaultTabExpandStyle",
+          "TabHeight" : 36,
+          "TabLocation" : "center",
+          "TabOffset" : 0,
+          "TabWidth" : 36,
+          "Type" : "container",
+          "Visible" : true,
+          "Z-index" : 10,
+          "__TypeDisplayName" : "Container"
+        },
+        "Widgets" : [ {
+          "Properties" : {
+            "Area" : "UI",
+            "DisplayName" : "panel-11",
+            "Height" : 200,
+            "HideScrollbars" : false,
+            "HorizontalAnchor" : "left",
+            "Id" : "panel-11",
+            "Left" : 375,
+            "ResponsiveLayout" : true,
+            "ShowDataLoading" : true,
+            "Style" : "DefaultPanelStyle",
+            "Top" : 155,
+            "Type" : "panel",
+            "VerticalAnchor" : "top",
+            "Visible" : true,
+            "Width" : 300,
+            "Z-index" : 10,
+            "__TypeDisplayName" : "Panel"
+          },
+          "Widgets" : [ {
+            "Properties" : {
+              "AllowSelection" : true,
+              "AllowXAxisZoom" : true,
+              "AllowYAxisZoom" : true,
+              "Area" : "UI",
+              "AxisAutoscale1" : true,
+              "AxisAutoscale10" : true,
+              "AxisAutoscale11" : true,
+              "AxisAutoscale12" : true,
+              "AxisAutoscale13" : true,
+              "AxisAutoscale14" : true,
+              "AxisAutoscale15" : true,
+              "AxisAutoscale16" : true,
+              "AxisAutoscale2" : true,
+              "AxisAutoscale3" : true,
+              "AxisAutoscale4" : true,
+              "AxisAutoscale5" : true,
+              "AxisAutoscale6" : true,
+              "AxisAutoscale7" : true,
+              "AxisAutoscale8" : true,
+              "AxisAutoscale9" : true,
+              "AxisFormat1" : "0000.0",
+              "AxisFormat10" : "0000.0",
+              "AxisFormat11" : "0000.0",
+              "AxisFormat12" : "0000.0",
+              "AxisFormat13" : "0000.0",
+              "AxisFormat14" : "0000.0",
+              "AxisFormat15" : "0000.0",
+              "AxisFormat16" : "0000.0",
+              "AxisFormat2" : "0000.0",
+              "AxisFormat3" : "0000.0",
+              "AxisFormat4" : "0000.0",
+              "AxisFormat5" : "0000.0",
+              "AxisFormat6" : "0000.0",
+              "AxisFormat7" : "0000.0",
+              "AxisFormat8" : "0000.0",
+              "AxisFormat9" : "0000.0",
+              "AxisMaximum1" : 100,
+              "AxisMaximum10" : 100,
+              "AxisMaximum11" : 100,
+              "AxisMaximum12" : 100,
+              "AxisMaximum13" : 100,
+              "AxisMaximum14" : 100,
+              "AxisMaximum15" : 100,
+              "AxisMaximum16" : 100,
+              "AxisMaximum2" : 100,
+              "AxisMaximum3" : 100,
+              "AxisMaximum4" : 100,
+              "AxisMaximum5" : 100,
+              "AxisMaximum6" : 100,
+              "AxisMaximum7" : 100,
+              "AxisMaximum8" : 100,
+              "AxisMaximum9" : 100,
+              "AxisMinimum1" : 0,
+              "AxisMinimum10" : 0,
+              "AxisMinimum11" : 0,
+              "AxisMinimum12" : 0,
+              "AxisMinimum13" : 0,
+              "AxisMinimum14" : 0,
+              "AxisMinimum15" : 0,
+              "AxisMinimum16" : 0,
+              "AxisMinimum2" : 0,
+              "AxisMinimum3" : 0,
+              "AxisMinimum4" : 0,
+              "AxisMinimum5" : 0,
+              "AxisMinimum6" : 0,
+              "AxisMinimum7" : 0,
+              "AxisMinimum8" : 0,
+              "AxisMinimum9" : 0,
+              "AxisZeroscale1" : false,
+              "AxisZeroscale10" : false,
+              "AxisZeroscale11" : false,
+              "AxisZeroscale12" : false,
+              "AxisZeroscale13" : false,
+              "AxisZeroscale14" : false,
+              "AxisZeroscale15" : false,
+              "AxisZeroscale16" : false,
+              "AxisZeroscale2" : false,
+              "AxisZeroscale3" : false,
+              "AxisZeroscale4" : false,
+              "AxisZeroscale5" : false,
+              "AxisZeroscale6" : false,
+              "AxisZeroscale7" : false,
+              "AxisZeroscale8" : false,
+              "AxisZeroscale9" : false,
+              "ChartAreaStyle" : "DefaultChartAreaStyle",
+              "ChartIndicatorStyle" : "DefaultChartIndicatorStyle",
+              "ChartLegendStyle" : "DefaultChartLegendStyle",
+              "ChartOrientation" : "vertical",
+              "ChartStyle" : "DefaultChartStyle",
+              "ChartTitle" : "",
+              "ChartTitleStyle" : "DefaultChartTitleStyle",
+              "ChartType" : "line",
+              "DisplayName" : "timeserieschart-20",
+              "EnableHover" : true,
+              "GridStyle" : "DefaultChartGridStyle",
+              "Height" : 431,
+              "Id" : "timeserieschart-20",
+              "Left" : 0,
+              "LegendLocation" : "right",
+              "LegendOrientation" : "vertical",
+              "LegendWidth" : 0,
+              "MarkerSize" : 3,
+              "MarkerType" : "circle",
+              "NumberOfSeries" : 8,
+              "ResponsiveLayout" : false,
+              "SecondaryYAxisAutoscale" : true,
+              "SecondaryYAxisFormat" : "0000.0",
+              "SecondaryYAxisMaximum" : 100,
+              "SecondaryYAxisMinimum" : 0,
+              "SecondaryYAxisZeroscale" : false,
+              "SelectedItemStyle" : "DefaultChartSelectionStyle",
+              "SeriesMarkerType1" : "chart",
+              "SeriesMarkerType10" : "chart",
+              "SeriesMarkerType11" : "chart",
+              "SeriesMarkerType12" : "chart",
+              "SeriesMarkerType13" : "chart",
+              "SeriesMarkerType14" : "chart",
+              "SeriesMarkerType15" : "chart",
+              "SeriesMarkerType16" : "chart",
+              "SeriesMarkerType2" : "chart",
+              "SeriesMarkerType3" : "chart",
+              "SeriesMarkerType4" : "chart",
+              "SeriesMarkerType5" : "chart",
+              "SeriesMarkerType6" : "chart",
+              "SeriesMarkerType7" : "chart",
+              "SeriesMarkerType8" : "chart",
+              "SeriesMarkerType9" : "chart",
+              "SeriesStyle1" : "DefaultChartStyle1",
+              "SeriesStyle10" : "DefaultChartStyle10",
+              "SeriesStyle11" : "DefaultChartStyle11",
+              "SeriesStyle12" : "DefaultChartStyle12",
+              "SeriesStyle13" : "DefaultChartStyle13",
+              "SeriesStyle14" : "DefaultChartStyle14",
+              "SeriesStyle15" : "DefaultChartStyle15",
+              "SeriesStyle16" : "DefaultChartStyle16",
+              "SeriesStyle2" : "DefaultChartStyle2",
+              "SeriesStyle3" : "DefaultChartStyle3",
+              "SeriesStyle4" : "DefaultChartStyle4",
+              "SeriesStyle5" : "DefaultChartStyle5",
+              "SeriesStyle6" : "DefaultChartStyle6",
+              "SeriesStyle7" : "DefaultChartStyle7",
+              "SeriesStyle8" : "DefaultChartStyle8",
+              "SeriesStyle9" : "DefaultChartStyle9",
+              "SeriesType1" : "chart",
+              "SeriesType10" : "chart",
+              "SeriesType11" : "chart",
+              "SeriesType12" : "chart",
+              "SeriesType13" : "chart",
+              "SeriesType14" : "chart",
+              "SeriesType15" : "chart",
+              "SeriesType16" : "chart",
+              "SeriesType2" : "chart",
+              "SeriesType3" : "chart",
+              "SeriesType4" : "chart",
+              "SeriesType5" : "chart",
+              "SeriesType6" : "chart",
+              "SeriesType7" : "chart",
+              "SeriesType8" : "chart",
+              "SeriesType9" : "chart",
+              "ShowDataLoading" : true,
+              "ShowLegend" : true,
+              "ShowXAxis" : true,
+              "ShowXAxisGrid" : true,
+              "ShowXAxisLabels" : true,
+              "ShowXAxisTicks" : true,
+              "ShowYAxis" : true,
+              "ShowYAxisGrid" : true,
+              "ShowYAxisLabels" : true,
+              "ShowYAxisTicks" : true,
+              "SingleDataSource" : true,
+              "Smoothing" : false,
+              "ToolTipField" : "",
+              "ToolTipStyle" : "DefaultTooltipStyle",
+              "Top" : 0,
+              "Type" : "timeserieschart",
+              "UseSecondaryAxis1" : false,
+              "UseSecondaryAxis10" : false,
+              "UseSecondaryAxis11" : false,
+              "UseSecondaryAxis12" : false,
+              "UseSecondaryAxis13" : false,
+              "UseSecondaryAxis14" : false,
+              "UseSecondaryAxis15" : false,
+              "UseSecondaryAxis16" : false,
+              "UseSecondaryAxis2" : false,
+              "UseSecondaryAxis3" : false,
+              "UseSecondaryAxis4" : false,
+              "UseSecondaryAxis5" : false,
+              "UseSecondaryAxis6" : false,
+              "UseSecondaryAxis7" : false,
+              "UseSecondaryAxis8" : false,
+              "UseSecondaryAxis9" : false,
+              "Visible" : true,
+              "Width" : 766,
+              "XAxisAutoscale" : true,
+              "XAxisFormat" : "yyyy-MM-dd HH:mm:ss.SSS",
+              "XAxisIntervals" : 10,
+              "XAxisLabels" : 2,
+              "XAxisMinorTicks" : 1,
+              "XAxisSmoothScaling" : true,
+              "XAxisStyle" : "DefaultChartAxisStyle",
+              "XAxisZeroscale" : false,
+              "YAxisAutoscale" : true,
+              "YAxisFormat" : "0000.0",
+              "YAxisIntervals" : 10,
+              "YAxisLabels" : 2,
+              "YAxisMaximum" : 100,
+              "YAxisMinimum" : 0,
+              "YAxisMinorTicks" : 1,
+              "YAxisMode" : "single",
+              "YAxisStyle" : "DefaultChartAxisStyle",
+              "YAxisZeroscale" : false,
+              "Z-index" : 10,
+              "__TypeDisplayName" : "Time Series Chart",
+              "__supportsTooltip" : true
+            },
+            "Widgets" : [ ]
+          } ]
+        } ]
+      }, {
+        "Properties" : {
+          "AnimateExpandCollapse" : true,
+          "Area" : "UI",
+          "BGImageRepeat" : "no-repeat",
+          "BGImageSize" : "auto",
+          "DisplayName" : "Right Sidebar",
+          "ExpandCollapseTabLocation" : "outside",
+          "Expanded" : true,
+          "Id" : "container-5",
+          "MinHeight" : 0,
+          "MinWidth" : 0,
+          "Overlay" : false,
+          "OverlayIsTransparent" : false,
+          "ResponsiveLayout" : true,
+          "ShowDataLoading" : true,
+          "ShowExpandCollapseTab" : false,
+          "Style" : "DefaultContainerStyle",
+          "TabCollapseStyle" : "DefaultTabCollapseStyle",
+          "TabExpandStyle" : "DefaultTabExpandStyle",
+          "TabHeight" : 36,
+          "TabLocation" : "center",
+          "TabOffset" : 0,
+          "TabWidth" : 36,
+          "Type" : "container",
+          "Visible" : true,
+          "Z-index" : 10,
+          "__TypeDisplayName" : "Container"
+        },
+        "Widgets" : [ {
+          "Properties" : {
+            "Area" : "UI",
+            "DisplayName" : "panel-16",
+            "Height" : 200,
+            "HideScrollbars" : false,
+            "HorizontalAnchor" : "left",
+            "Id" : "panel-16",
+            "Left" : 35,
+            "ResponsiveLayout" : true,
+            "ShowDataLoading" : true,
+            "Style" : "DefaultPanelStyle",
+            "Top" : 145,
+            "Type" : "panel",
+            "VerticalAnchor" : "top",
+            "Visible" : true,
+            "Width" : 300,
+            "Z-index" : 10,
+            "__TypeDisplayName" : "Panel"
+          },
+          "Widgets" : [ ]
+        } ]
+      } ]
+    } ]
   },
   "mashupType" : "mashup"
-}]]></mashupContent>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;" timestamp="2019-01-05T23:53:38.166+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="header : projectName : updated&#10;" timestamp="2019-01-05T23:53:46.318+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2019-01-06T00:14:16.595+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </Mashup>
-    </Mashups>
-    <ScriptFunctionLibraries/>
-    <Projects>
-        <Project dependsOn="" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-06T00:14:16.596+01:00" name="TT_IOT_PROJ" packageVersion="1.0.0" projectName="TT_IOT_PROJ"
-                 tags="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;" timestamp="2019-01-05T23:52:37.700+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2019-01-06T00:14:16.596+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </Project>
-    </Projects>
-    <Users/>
-    <DirectoryServices/>
-    <Widgets/>
-    <MediaEntities/>
-    <Groups/>
-    <PersistenceProviders/>
-    <NotificationContents/>
-    <ModelTags/>
-    <LocalizationTables/>
-    <Dashboards/>
-    <DataAnalysisDefinitions/>
-    <DataShapes>
-        <DataShape baseDataShape="" description="Shape for list of Pc sensors" documentationContent="" homeMashup="" lastModifiedDate="2019-01-14T21:44:32.039+01:00" name="PcSensorsNames"
-                   projectName="TT_IOT_PROJ" tags="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <FieldDefinitions>
-                <FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="name" ordinal="1"/>
-            </FieldDefinitions>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, description : updated, projectName : updated&#10;fields : name : added&#10;"
-                                     timestamp="2019-01-14T09:34:13.689+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </DataShape>
-    </DataShapes>
-    <Things>
-        <Thing description="" documentationContent="" effectiveThingPackage="ValueStreamThing" enabled="true" homeMashup="StreamMashup" identifier="" lastModifiedDate="2019-01-14T21:44:29.729+01:00"
-               name="PcValueStream" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="ValueStream" valueStream="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables>
-                <ConfigurationTable description="Data Thing Configuration" isMultiRow="false" name="DataThingSettings" ordinal="0">
-                    <DataShape>
-                        <FieldDefinitions>
-                            <FieldDefinition baseType="STRING" description="Persistence Provider Name" name="persistenceProvider" ordinal="0"/>
-                        </FieldDefinitions>
-                    </DataShape>
-                    <Rows>
-                        <Row>
-                            <persistenceProvider><![CDATA[ThingworxPersistenceProvider]]></persistenceProvider>
-                        </Row>
-                    </Rows>
-                </ConfigurationTable>
-                <ConfigurationTable description="Configurable options to tune Value Stream performance" isMultiRow="false" name="PersistenceProviderCustomSettings" ordinal="2">
-                    <DataShape>
-                        <FieldDefinitions>
-                            <FieldDefinition aspect.friendlyName="Persistence Provider Custom Settings Table" baseType="INFOTABLE" description="Persistence Provider Custom Config Table"
-                                             name="customConfigTable" ordinal="0"/>
-                        </FieldDefinitions>
-                    </DataShape>
-                    <Rows>
-                        <Row>
-                            <customConfigTable>
-                                <infoTable>
-                                    <DataShape>
-                                        <FieldDefinitions/>
-                                    </DataShape>
-                                    <Rows/>
-                                </infoTable>
-                            </customConfigTable>
-                        </Row>
-                    </Rows>
-                </ConfigurationTable>
-            </ConfigurationTables>
-            <ThingShape>
-                <PropertyDefinitions/>
-                <ServiceDefinitions/>
-                <EventDefinitions/>
-                <ServiceMappings/>
-                <ServiceImplementations/>
-                <Subscriptions/>
-            </ThingShape>
-            <PropertyBindings/>
-            <RemotePropertyBindings>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName=""
-                                       timeout="0"/>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE"
-                                       sourceName="" timeout="0"/>
-            </RemotePropertyBindings>
-            <RemoteServiceBindings/>
-            <RemoteEventBindings/>
-            <AlertConfigurations/>
-            <ImplementedShapes>
-                <ImplementedShape name="PcThingShape" type="ThingShape"/>
-            </ImplementedShapes>
-            <ThingProperties>
-                <CPU_Load_Total>
-                    <Value>0.0</Value>
-                    <Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </CPU_Load_Total>
-                <CPU_Temp_Package>
-                    <Value>0.0</Value>
-                    <Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </CPU_Temp_Package>
-                <MB_Temp>
-                    <Value>0.0</Value>
-                    <Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </MB_Temp>
-            </ThingProperties>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : implementedShapes : updated, valueStream : updated, projectName : updated, name : updated&#10;"
-                                     timestamp="2019-01-14T19:35:27.579+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:39:51.509+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:39:57.019+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:55:51.694+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T21:44:29.728+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </Thing>
-        <Thing description="" documentationContent="" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier="lenovo-hei" lastModifiedDate="2019-01-14T21:44:24.340+01:00"
-               name="PC_lenovo" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="PcThingTemplate" valueStream="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ThingShape>
-                <PropertyDefinitions/>
-                <ServiceDefinitions/>
-                <EventDefinitions/>
-                <ServiceMappings/>
-                <ServiceImplementations/>
-                <Subscriptions/>
-            </ThingShape>
-            <PropertyBindings/>
-            <RemotePropertyBindings>
-                <RemotePropertyBinding foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i5-6300HQ___Load_CPU_Total" timeout="0"/>
-                <RemotePropertyBinding foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i5-6300HQ___Temp_CPU_Package" timeout="0"/>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName=""
-                                       timeout="0"/>
-            </RemotePropertyBindings>
-            <RemoteServiceBindings/>
-            <RemoteEventBindings/>
-            <AlertConfigurations/>
-            <ImplementedShapes/>
-            <ThingProperties>
-                <lastConnection>
-                    <Value>2019-01-14T21:44:32.046+01:00</Value>
-                    <Timestamp>2019-01-14T21:44:32.046+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </lastConnection>
-                <CPU_Load_Total>
-                    <Value>53.50876998901367</Value>
-                    <Timestamp>2019-01-14T21:46:05.285+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </CPU_Load_Total>
-                <CPU_Temp_Package>
-                    <Value>66.0</Value>
-                    <Timestamp>2019-01-14T21:46:05.285+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </CPU_Temp_Package>
-                <MB_Temp>
-                    <Value>0.0</Value>
-                    <Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </MB_Temp>
-            </ThingProperties>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T21:41:45.446+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Load_Total : updated, CPU_Temp_Package : updated&#10;" timestamp="2019-01-14T21:42:55.336+01:00"
-                                     user="Administrator"/>
-            </ConfigurationChanges>
-        </Thing>
-        <Thing description="" documentationContent="" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier="debianmail" lastModifiedDate="2019-01-14T21:44:22.100+01:00"
-               name="PC_debianmail" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="PcThingTemplate" valueStream="">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ThingShape>
-                <PropertyDefinitions/>
-                <ServiceDefinitions/>
-                <EventDefinitions/>
-                <ServiceMappings/>
-                <ServiceImplementations/>
-                <Subscriptions/>
-            </ThingShape>
-            <PropertyBindings/>
-            <RemotePropertyBindings>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName=""
-                                       timeout="0"/>
-                <RemotePropertyBinding foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="ACPI_interface___Temp_CPU_Temperature" timeout="0"/>
-                <RemotePropertyBinding foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName="ACPI_interface___Temp_MB_Temperature" timeout="0"/>
-            </RemotePropertyBindings>
-            <RemoteServiceBindings/>
-            <RemoteEventBindings/>
-            <AlertConfigurations/>
-            <ImplementedShapes/>
-            <ThingProperties>
-                <lastConnection>
-                    <Value>2019-01-14T21:44:32.047+01:00</Value>
-                    <Timestamp>2019-01-14T21:44:32.047+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </lastConnection>
-                <CPU_Load_Total>
-                    <Value>0.0</Value>
-                    <Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </CPU_Load_Total>
-                <CPU_Temp_Package>
-                    <Value>34.0</Value>
-                    <Timestamp>2019-01-14T21:44:35.707+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </CPU_Temp_Package>
-                <MB_Temp>
-                    <Value>34.0</Value>
-                    <Timestamp>2019-01-14T21:57:41.468+01:00</Timestamp>
-                    <Quality>GOOD</Quality>
-                </MB_Temp>
-            </ThingProperties>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T21:33:42.046+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Temp_Package : updated&#10;" timestamp="2019-01-14T21:34:24.935+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="properties : MB_Temp : updated&#10;" timestamp="2019-01-14T21:35:43.057+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </Thing>
-    </Things>
-    <Logs/>
-    <Authenticators/>
-    <ThingPackages/>
-    <NotificationDefinitions/>
-    <ApplicationKeys>
-        <ApplicationKey clientName="" description="" documentationContent="" expirationDate="2020-01-01T00:00:00.000+01:00" homeMashup="" ipWhitelist="" keyId="138e4f5d-3f1e-4f3c-959f-49b82e2d6556"
-                        lastModifiedDate="2019-01-06T00:14:16.464+01:00" name="TT_IOT_APP_KEY" projectName="TT_IOT_PROJ" tags="" userNameReference="Administrator">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, userNameReference : updated, expirationDate : updated, projectName : updated&#10;"
-                                     timestamp="2019-01-05T23:54:45.943+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2019-01-06T00:14:16.464+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </ApplicationKey>
-    </ApplicationKeys>
-    <StateDefinitions/>
-    <ThingTemplates>
-        <ThingTemplate baseThingTemplate="RemoteThing" description="" documentationContent="" effectiveThingPackage="RemoteThing" homeMashup="" lastModifiedDate="2019-01-14T21:31:55.965+01:00"
-                       name="PcThingTemplate" projectName="TT_IOT_PROJ" tags="" thingPackage="" valueStream="PcValueStream">
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <PropertyBindings/>
-            <RemotePropertyBindings/>
-            <RemoteServiceBindings/>
-            <RemoteEventBindings/>
-            <AlertConfigurations/>
-            <ThingShape>
-                <PropertyDefinitions/>
-                <ServiceDefinitions/>
-                <EventDefinitions/>
-                <ServiceMappings/>
-                <ServiceImplementations/>
-                <Subscriptions/>
-            </ThingShape>
-            <ImplementedShapes>
-                <ImplementedShape name="PcThingShape" type="ThingShape"/>
-            </ImplementedShapes>
-            <SharedConfigurationTables/>
-            <InstanceDesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </InstanceDesignTimePermissions>
-            <InstanceRunTimePermissions/>
-            <InstanceVisibilityPermissions>
-                <Visibility/>
-            </InstanceVisibilityPermissions>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T12:41:48.307+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="header : implementedShapes : updated&#10;" timestamp="2019-01-14T12:42:42.535+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="header : valueStream : updated&#10;" timestamp="2019-01-14T21:31:29.586+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-        </ThingTemplate>
-    </ThingTemplates>
-    <ExtensionPackages/>
-    <Organizations/>
-    <Menus/>
-    <Resources/>
-    <DataTags/>
-    <ThingShapes>
-        <ThingShape className="" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-14T21:44:26.521+01:00" name="PcThingShape" projectName="TT_IOT_PROJ" tags="">
-            <PropertyDefinitions>
-                <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description=""
-                                    isLocalOnly="false" name="CPU_Load_Total" ordinal="3"/>
-                <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description=""
-                                    isLocalOnly="false" name="CPU_Temp_Package" ordinal="4"/>
-                <PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description=""
-                                    isLocalOnly="false" name="MB_Temp" ordinal="4"/>
-            </PropertyDefinitions>
-            <ServiceDefinitions>
-                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetPcSensorsNames">
-                    <ResultType aspect.dataShape="PcSensorsNames" baseType="INFOTABLE" description="" name="result" ordinal="0"/>
-                    <ParameterDefinitions/>
-                </ServiceDefinition>
-                <ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Shutdown">
-                    <ResultType baseType="NOTHING" description="" name="result" ordinal="0"/>
-                    <ParameterDefinitions/>
-                </ServiceDefinition>
-            </ServiceDefinitions>
-            <EventDefinitions/>
-            <ServiceMappings/>
-            <ServiceImplementations/>
-            <Subscriptions/>
-            <Owner name="Administrator" type="User"/>
-            <avatar/>
-            <DesignTimePermissions>
-                <Create/>
-                <Read/>
-                <Update/>
-                <Delete/>
-                <Metadata/>
-            </DesignTimePermissions>
-            <RunTimePermissions/>
-            <VisibilityPermissions>
-                <Visibility/>
-            </VisibilityPermissions>
-            <ConfigurationTableDefinitions/>
-            <ConfigurationTables/>
-            <ConfigurationChanges>
-                <ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T12:42:13.975+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service added&#10;" timestamp="2019-01-14T12:42:22.335+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service updated&#10;Shutdown : service added&#10;" timestamp="2019-01-14T12:42:34.454+01:00"
-                                     user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service updated&#10;" timestamp="2019-01-14T19:16:31.783+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY"
-                                     changeReason="services : GetPcSensorsNames : service updated&#10;properties : CPU_Temp_Total : added, CPU_Load_Total : added, CPU_Temp_Package : added, CPU_Temp_Total : removed&#10;"
-                                     timestamp="2019-01-14T19:32:37.732+01:00" user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Load_Total : updated, CPU_Temp_Package : updated&#10;" timestamp="2019-01-14T19:34:41.186+01:00"
-                                     user="Administrator"/>
-                <ConfigurationChange changeAction="MODIFY" changeReason="properties : MB_Temp : added&#10;" timestamp="2019-01-14T21:35:17.590+01:00" user="Administrator"/>
-            </ConfigurationChanges>
-            <PropertyBindings/>
-            <RemotePropertyBindings>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName=""
-                                       timeout="0"/>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE"
-                                       sourceName="" timeout="0"/>
-                <RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName=""
-                                       timeout="0"/>
-            </RemotePropertyBindings>
-            <RemoteServiceBindings>
-                <RemoteServiceBinding enableQueue="false" name="GetPcSensorsNames" sourceName="GetPcSensorsNames" timeout="0"/>
-                <RemoteServiceBinding enableQueue="false" name="Shutdown" sourceName="Shutdown" timeout="0"/>
-            </RemoteServiceBindings>
-            <RemoteEventBindings/>
-            <AlertConfigurations>
-                <AlertDefinitions name="CPU_Load_Total"/>
-                <AlertDefinitions name="CPU_Temp_Package"/>
-                <AlertDefinitions name="MB_Temp"/>
-            </AlertConfigurations>
-            <InstanceRunTimePermissions/>
-        </ThingShape>
-    </ThingShapes>
-    <Subsystems/>
-</Entities>
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T23:37:48.857+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:38:47.699+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:40:15.520+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:43:28.943+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:51:47.801+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:52:41.517+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:54:00.155+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-14T23:59:54.117+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:01:40.076+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:03:45.150+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:10:50.828+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:11:22.006+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:12:24.002+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:13:45.138+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:23:52.812+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:25:00.938+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:44:21.402+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:46:39.275+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:51:29.962+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:52:21.916+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T00:57:21.540+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:01:09.138+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:09:17.984+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:12:41.852+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:14:20.954+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:32:36.498+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:36:30.112+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:56:59.527+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T01:59:19.498+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:00:39.582+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:04:19.275+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:05:07.842+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:05:51.116+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:06:07.455+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:25:50.835+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:28:58.162+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:32:23.803+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:35:43.399+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:36:17.909+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="Mashup : design : updated&#10;" timestamp="2019-01-15T02:38:28.932+01:00" user="Administrator"/></ConfigurationChanges></Mashup></Mashups><ScriptFunctionLibraries/><Projects><Project dependsOn="" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-06T00:14:16.596+01:00" name="TT_IOT_PROJ" packageVersion="1.0.0" projectName="TT_IOT_PROJ" tags=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;" timestamp="2019-01-05T23:52:37.700+01:00" user="Administrator"/><ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2019-01-06T00:14:16.596+01:00" user="Administrator"/></ConfigurationChanges></Project></Projects><Users/><DirectoryServices/><Widgets/><MediaEntities/><Groups/><PersistenceProviders/><NotificationContents/><ModelTags/><LocalizationTables/><Dashboards/><DataAnalysisDefinitions/><DataShapes><DataShape baseDataShape="" description="Shape for list of Pc sensors" documentationContent="" homeMashup="" lastModifiedDate="2019-01-14T21:44:32.039+01:00" name="PcSensorsNames" projectName="TT_IOT_PROJ" tags=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><FieldDefinitions><FieldDefinition aspect.isPrimaryKey="false" baseType="STRING" description="" name="name" ordinal="1"/></FieldDefinitions><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, description : updated, projectName : updated&#10;fields : name : added&#10;" timestamp="2019-01-14T09:34:13.689+01:00" user="Administrator"/></ConfigurationChanges></DataShape></DataShapes><Things><Thing description="" documentationContent="" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier="DESKTOP-E06IM31" lastModifiedDate="2019-01-15T08:42:50.036+01:00" name="trete" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="PcThingTemplate" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions/><ServiceDefinitions/><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings><RemotePropertyBinding foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i7-6700HQ___Load_CPU_Total" timeout="0"/><RemotePropertyBinding foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i7-6700HQ___Temp_CPU_Package" timeout="0"/><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/></RemotePropertyBindings><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties><lastConnection><Value>2019-01-15T08:42:50.044+01:00</Value><Timestamp>2019-01-15T08:42:50.044+01:00</Timestamp><Quality>GOOD</Quality></lastConnection><CPU_Load_Total><Value>13.47655963897705</Value><Timestamp>2019-01-15T08:45:04.439+01:00</Timestamp><Quality>GOOD</Quality></CPU_Load_Total><CPU_Temp_Package><Value>42.0</Value><Timestamp>2019-01-15T08:45:02.087+01:00</Timestamp><Quality>GOOD</Quality></CPU_Temp_Package><MB_Temp><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></MB_Temp></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : projectName : updated, name : updated&#10;" timestamp="2019-01-15T08:42:21.865+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Load_Total : updated, CPU_Temp_Package : updated&#10;" timestamp="2019-01-15T08:42:39.246+01:00" user="Administrator"/></ConfigurationChanges></Thing><Thing description="" documentationContent="" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier="PC_lenovo-hei" lastModifiedDate="2019-01-15T02:22:31.977+01:00" name="PC_lenovo-hei" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="PcThingTemplate" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions/><ServiceDefinitions/><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings><RemotePropertyBinding foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i5-6300HQ___Load_CPU_Total" timeout="0"/><RemotePropertyBinding foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="Intel_Core_i5-6300HQ___Temp_CPU_Package" timeout="0"/><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/></RemotePropertyBindings><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties><lastConnection><Value>2019-01-15T02:22:31.981+01:00</Value><Timestamp>2019-01-15T02:22:31.981+01:00</Timestamp><Quality>GOOD</Quality></lastConnection><CPU_Load_Total><Value>25.0</Value><Timestamp>2019-01-15T02:40:12.582+01:00</Timestamp><Quality>GOOD</Quality></CPU_Load_Total><CPU_Temp_Package><Value>66.0</Value><Timestamp>2019-01-15T02:40:10.406+01:00</Timestamp><Quality>GOOD</Quality></CPU_Temp_Package><MB_Temp><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></MB_Temp></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-15T02:18:41.067+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-15T02:18:59.188+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Load_Total : updated, CPU_Temp_Package : updated&#10;" timestamp="2019-01-15T02:21:51.436+01:00" user="Administrator"/></ConfigurationChanges></Thing><Thing description="" documentationContent="" effectiveThingPackage="ValueStreamThing" enabled="true" homeMashup="StreamMashup" identifier="" lastModifiedDate="2019-01-14T21:44:29.729+01:00" name="PcValueStream" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="ValueStream" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables><ConfigurationTable description="Data Thing Configuration" isMultiRow="false" name="DataThingSettings" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="Persistence Provider Name" name="persistenceProvider" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><persistenceProvider><![CDATA[ThingworxPersistenceProvider]]></persistenceProvider></Row></Rows></ConfigurationTable><ConfigurationTable description="Configurable options to tune Value Stream performance" isMultiRow="false" name="PersistenceProviderCustomSettings" ordinal="2"><DataShape><FieldDefinitions><FieldDefinition aspect.friendlyName="Persistence Provider Custom Settings Table" baseType="INFOTABLE" description="Persistence Provider Custom Config Table" name="customConfigTable" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><customConfigTable><infoTable><DataShape><FieldDefinitions/></DataShape><Rows/></infoTable></customConfigTable></Row></Rows></ConfigurationTable></ConfigurationTables><ThingShape><PropertyDefinitions/><ServiceDefinitions/><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/></RemotePropertyBindings><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes><ImplementedShape name="PcThingShape" type="ThingShape"/></ImplementedShapes><ThingProperties><CPU_Load_Total><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></CPU_Load_Total><CPU_Temp_Package><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></CPU_Temp_Package><MB_Temp><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></MB_Temp></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : implementedShapes : updated, valueStream : updated, projectName : updated, name : updated&#10;" timestamp="2019-01-14T19:35:27.579+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:39:51.509+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:39:57.019+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T19:55:51.694+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2019-01-14T21:44:29.728+01:00" user="Administrator"/></ConfigurationChanges></Thing><Thing description="" documentationContent="" effectiveThingPackage="RemoteThing" enabled="true" homeMashup="" identifier="debianmail" lastModifiedDate="2019-01-14T21:44:22.100+01:00" name="PC_debianmail" projectName="TT_IOT_PROJ" published="false" tags="" thingTemplate="PcThingTemplate" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ThingShape><PropertyDefinitions/><ServiceDefinitions/><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/><RemotePropertyBinding foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="ACPI_interface___Temp_CPU_Temperature" timeout="0"/><RemotePropertyBinding foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName="ACPI_interface___Temp_MB_Temperature" timeout="0"/></RemotePropertyBindings><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties><lastConnection><Value>2019-01-14T22:15:51.621+01:00</Value><Timestamp>2019-01-14T22:15:51.621+01:00</Timestamp><Quality>GOOD</Quality></lastConnection><CPU_Load_Total><Value>0.0</Value><Timestamp>1970-01-01T01:00:00.000+01:00</Timestamp><Quality>UNKNOWN</Quality></CPU_Load_Total><CPU_Temp_Package><Value>34.0</Value><Timestamp>2019-01-14T22:15:55.288+01:00</Timestamp><Quality>GOOD</Quality></CPU_Temp_Package><MB_Temp><Value>35.0</Value><Timestamp>2019-01-14T22:15:55.289+01:00</Timestamp><Quality>GOOD</Quality></MB_Temp></ThingProperties><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T21:33:42.046+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Temp_Package : updated&#10;" timestamp="2019-01-14T21:34:24.935+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : MB_Temp : updated&#10;" timestamp="2019-01-14T21:35:43.057+01:00" user="Administrator"/></ConfigurationChanges></Thing></Things><Logs/><Authenticators/><ThingPackages/><NotificationDefinitions/><ApplicationKeys><ApplicationKey clientName="" description="" documentationContent="" expirationDate="2020-01-01T00:00:00.000+01:00" homeMashup="" ipWhitelist="" keyId="138e4f5d-3f1e-4f3c-959f-49b82e2d6556" lastModifiedDate="2019-01-06T00:14:16.464+01:00" name="TT_IOT_APP_KEY" projectName="TT_IOT_PROJ" tags="" userNameReference="Administrator"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, userNameReference : updated, expirationDate : updated, projectName : updated&#10;" timestamp="2019-01-05T23:54:45.943+01:00" user="Administrator"/><ConfigurationChange changeAction="CREATE" changeReason="" timestamp="2019-01-06T00:14:16.464+01:00" user="Administrator"/></ConfigurationChanges></ApplicationKey></ApplicationKeys><StateDefinitions/><ThingTemplates><ThingTemplate baseThingTemplate="RemoteThing" description="" documentationContent="" effectiveThingPackage="RemoteThing" homeMashup="" lastModifiedDate="2019-01-15T01:58:28.438+01:00" name="PcThingTemplate" projectName="TT_IOT_PROJ" tags="" thingPackage="" valueStream="PcValueStream"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ThingShape><PropertyDefinitions/><ServiceDefinitions/><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/></ThingShape><ImplementedShapes><ImplementedShape name="PcThingShape" type="ThingShape"/></ImplementedShapes><SharedConfigurationTables/><InstanceDesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></InstanceDesignTimePermissions><InstanceRunTimePermissions/><InstanceVisibilityPermissions><Visibility/></InstanceVisibilityPermissions><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T12:41:48.307+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : implementedShapes : updated&#10;" timestamp="2019-01-14T12:42:42.535+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : valueStream : updated&#10;" timestamp="2019-01-14T21:31:29.586+01:00" user="Administrator"/></ConfigurationChanges></ThingTemplate></ThingTemplates><ExtensionPackages/><Organizations/><Menus/><Resources/><DataTags/><ThingShapes><ThingShape className="" description="" documentationContent="" homeMashup="" lastModifiedDate="2019-01-14T21:44:26.521+01:00" name="PcThingShape" projectName="TT_IOT_PROJ" tags=""><PropertyDefinitions><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description="" isLocalOnly="false" name="CPU_Load_Total" ordinal="3"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description="" isLocalOnly="false" name="CPU_Temp_Package" ordinal="4"/><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="true" aspect.isPersistent="true" baseType="NUMBER" category="" description="" isLocalOnly="false" name="MB_Temp" ordinal="4"/></PropertyDefinitions><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetPcSensorsNames"><ResultType aspect.dataShape="PcSensorsNames" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="Shutdown"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations/><Subscriptions/><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTableDefinitions/><ConfigurationTables/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, projectName : updated&#10;" timestamp="2019-01-14T12:42:13.975+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service added&#10;" timestamp="2019-01-14T12:42:22.335+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service updated&#10;Shutdown : service added&#10;" timestamp="2019-01-14T12:42:34.454+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service updated&#10;" timestamp="2019-01-14T19:16:31.783+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetPcSensorsNames : service updated&#10;properties : CPU_Temp_Total : added, CPU_Load_Total : added, CPU_Temp_Package : added, CPU_Temp_Total : removed&#10;" timestamp="2019-01-14T19:32:37.732+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : CPU_Load_Total : updated, CPU_Temp_Package : updated&#10;" timestamp="2019-01-14T19:34:41.186+01:00" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : MB_Temp : added&#10;" timestamp="2019-01-14T21:35:17.590+01:00" user="Administrator"/></ConfigurationChanges><PropertyBindings/><RemotePropertyBindings><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Load_Total" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="CPU_Temp_Package" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/><RemotePropertyBinding aspect.source="" aspect.startType="useDefaultValue" aspect.tagAddress="" foldType="NONE" name="MB_Temp" pushThreshold="0.0" pushType="VALUE" sourceName="" timeout="0"/></RemotePropertyBindings><RemoteServiceBindings><RemoteServiceBinding enableQueue="false" name="GetPcSensorsNames" sourceName="GetPcSensorsNames" timeout="0"/><RemoteServiceBinding enableQueue="false" name="Shutdown" sourceName="Shutdown" timeout="0"/></RemoteServiceBindings><RemoteEventBindings/><AlertConfigurations><AlertDefinitions name="CPU_Load_Total"/><AlertDefinitions name="CPU_Temp_Package"/><AlertDefinitions name="MB_Temp"/></AlertConfigurations><InstanceRunTimePermissions/></ThingShape></ThingShapes><Subsystems/></Entities>
